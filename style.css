@@ -3,6 +3,7 @@
 * {
   box-sizing: border-box;
   text-decoration: none;
+  margin: 0;
 }
 
 body {
@@ -33,9 +34,15 @@ body {
   overflow: hidden;
 }
 
+@media (max-width: 767px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
 .inner_container {
   display: flex;
-  width: 50%;
+  flex-basis: 50%;
   flex-direction: column;
   padding: 45px;
 }
@@ -45,7 +52,6 @@ body {
   background-size: cover;
   background-position: center center;
   color: #fff;
-  display: flex;
   justify-content: center;
 }
 
