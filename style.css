@@ -23,7 +23,7 @@ body {
   flex-direction: column;
   box-shadow: -8px 16px 25px 5px rgba(0, 0, 0, 0.1);
   border-radius: 304px;
-  margin: 0 15px;
+  margin: 15px;
 }
 
 .row {
