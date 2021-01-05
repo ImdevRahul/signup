@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register form</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+    <main>
+      <section class="container">
+        <div class="row">
+          <div class="inner_container overlay">
+            <h1>“Rule of thumb for UX: <br> More options, more problems.”</p>
+          </div>
+          <div class="inner_container card_holder">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDt3gslkIahorjd5GqQiQ6s6dVLZxh9hgxrg&usqp=CAU"
+              alt="">
+            <div class="front">
+              <h2>Register for more ideas</h2>
+              <form action="">
+                <div class="form-holder">
+                  <input type="text" required placeholder="Name">
+                  <input type="text" placeholder="Phone number">
+                  <input type="text" required placeholder="Email address">
+                  <input type="password" required placeholder="Password">
+                  <button type="submit">Register</button>
+                  <div class="checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Agree terms and conditions</label>
+                  </div>
+                  <p>Already have a account? <span><a href="javascript:void(0)" id="logInLink" class="logInLink">Sign
+                        in</a></span></p>
+                </div>
+              </form>
+            </div>
+            <div class="back">
+              <form action="">
+                <div class="form-holder">
+                  <input type="text" required placeholder="Email address">
+                  <input type="password" required placeholder="Password">
+                  <button type="submit">Login</button>
+                  <p>Don't have a account? <span><a href="javascript:void(0)" id="logInLink2" class="logInLink">Sign
+                        Up</a></span></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+      $(document).ready(function ()
+      {
+        $(".logInLink").click(function ()
+        {
+          $(".card_holder").toggleClass('active')
+        })
+      });
+    </script>
+  </body>
+
+</html>
